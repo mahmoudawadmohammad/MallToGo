@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="eStoreDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="category">
+          <Key>
+            <PropertyRef Name="Category_ID" />
+          </Key>
+          <Property Name="Category_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="45" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Cobones">
+          <Key>
+            <PropertyRef Name="Cobone_ID" />
+          </Key>
+          <Property Name="Cobone_ID" Type="int" Nullable="false" />
+          <Property Name="cobone_number" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="active_date" Type="date" Nullable="false" />
+          <Property Name="end_date" Type="date" Nullable="false" />
+          <Property Name="status" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Products" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="percent" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="invoice">
+          <Key>
+            <PropertyRef Name="Invoice_ID" />
+          </Key>
+          <Property Name="Invoice_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DateTime" Type="datetime2" Precision="0" Nullable="false" />
+        </EntityType>
+        <EntityType Name="orders">
+          <Key>
+            <PropertyRef Name="PK" />
+          </Key>
+          <Property Name="Sold_Quantity" Type="int" Nullable="false" />
+          <Property Name="Product_ID" Type="int" Nullable="false" />
+          <Property Name="Invoice_ID" Type="int" Nullable="false" />
+          <Property Name="PK" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="products">
+          <Key>
+            <PropertyRef Name="Product_ID" />
+          </Key>
+          <Property Name="Product_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="45" Nullable="false" />
+          <Property Name="Price" Type="nvarchar" MaxLength="45" />
+          <Property Name="Quantity" Type="int" />
+          <Property Name="Image" Type="nvarchar" MaxLength="255" />
+          <Property Name="Category_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="users">
+          <Key>
+            <PropertyRef Name="Users_ID" />
+          </Key>
+          <Property Name="Users_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="First_Name" Type="nvarchar" MaxLength="45" Nullable="false" />
+          <Property Name="Last_Name" Type="nvarchar" MaxLength="45" Nullable="false" />
+          <Property Name="Phone" Type="nvarchar" MaxLength="12" Nullable="false" />
+          <Property Name="Role" Type="nvarchar" MaxLength="45" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="45" Nullable="false" />
+          <Property Name="Password" Type="nvarchar" MaxLength="45" Nullable="false" />
+          <Property Name="personal_question" Type="nvarchar" MaxLength="255" />
+          <Property Name="photo" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <Association Name="orders$fk_Orders_Invoice">
+          <End Role="invoice" Type="Self.invoice" Multiplicity="1" />
+          <End Role="orders" Type="Self.orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="invoice">
+              <PropertyRef Name="Invoice_ID" />
+            </Principal>
+            <Dependent Role="orders">
+              <PropertyRef Name="Invoice_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="orders$fk_Orders_Products">
+          <End Role="products" Type="Self.products" Multiplicity="1" />
+          <End Role="orders" Type="Self.orders" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="products">
+              <PropertyRef Name="Product_ID" />
+            </Principal>
+            <Dependent Role="orders">
+              <PropertyRef Name="Product_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="products$fk_Products_Category">
+          <End Role="category" Type="Self.category" Multiplicity="1" />
+          <End Role="products" Type="Self.products" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="category">
+              <PropertyRef Name="Category_ID" />
+            </Principal>
+            <Dependent Role="products">
+              <PropertyRef Name="Category_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="eStoreDBModelStoreContainer">
+          <EntitySet Name="category" EntityType="Self.category" Schema="estore" store:Type="Tables" />
+          <EntitySet Name="Cobones" EntityType="Self.Cobones" Schema="estore" store:Type="Tables" />
+          <EntitySet Name="invoice" EntityType="Self.invoice" Schema="estore" store:Type="Tables" />
+          <EntitySet Name="orders" EntityType="Self.orders" Schema="estore" store:Type="Tables" />
+          <EntitySet Name="products" EntityType="Self.products" Schema="estore" store:Type="Tables" />
+          <EntitySet Name="users" EntityType="Self.users" Schema="estore" store:Type="Tables" />
+          <AssociationSet Name="orders$fk_Orders_Invoice" Association="Self.orders$fk_Orders_Invoice">
+            <End Role="invoice" EntitySet="invoice" />
+            <End Role="orders" EntitySet="orders" />
+          </AssociationSet>
+          <AssociationSet Name="orders$fk_Orders_Products" Association="Self.orders$fk_Orders_Products">
+            <End Role="products" EntitySet="products" />
+            <End Role="orders" EntitySet="orders" />
+          </AssociationSet>
+          <AssociationSet Name="products$fk_Products_Category" Association="Self.products$fk_Products_Category">
+            <End Role="category" EntitySet="category" />
+            <End Role="products" EntitySet="products" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="eStoreDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="category">
+          <Key>
+            <PropertyRef Name="Category_ID" />
+          </Key>
+          <Property Name="Category_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="products" Relationship="Self.products_fk_Products_Category" FromRole="category" ToRole="products" />
+        </EntityType>
+        <EntityType Name="Cobone">
+          <Key>
+            <PropertyRef Name="Cobone_ID" />
+          </Key>
+          <Property Name="Cobone_ID" Type="Int32" Nullable="false" />
+          <Property Name="cobone_number" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="active_date" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="end_date" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Products" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="percent" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="invoice">
+          <Key>
+            <PropertyRef Name="Invoice_ID" />
+          </Key>
+          <Property Name="Invoice_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DateTime" Type="DateTime" Nullable="false" Precision="0" />
+          <NavigationProperty Name="orders" Relationship="Self.orders_fk_Orders_Invoice" FromRole="invoice" ToRole="orders" />
+        </EntityType>
+        <EntityType Name="order">
+          <Key>
+            <PropertyRef Name="PK" />
+          </Key>
+          <Property Name="Sold_Quantity" Type="Int32" Nullable="false" />
+          <Property Name="Product_ID" Type="Int32" Nullable="false" />
+          <Property Name="Invoice_ID" Type="Int32" Nullable="false" />
+          <Property Name="PK" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="invoice" Relationship="Self.orders_fk_Orders_Invoice" FromRole="orders" ToRole="invoice" />
+          <NavigationProperty Name="product" Relationship="Self.orders_fk_Orders_Products" FromRole="orders" ToRole="products" />
+        </EntityType>
+        <EntityType Name="product">
+          <Key>
+            <PropertyRef Name="Product_ID" />
+          </Key>
+          <Property Name="Product_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Price" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+          <Property Name="Quantity" Type="Int32" />
+          <Property Name="Image" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Category_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="category" Relationship="Self.products_fk_Products_Category" FromRole="products" ToRole="category" />
+          <NavigationProperty Name="orders" Relationship="Self.orders_fk_Orders_Products" FromRole="products" ToRole="orders" />
+        </EntityType>
+        <EntityType Name="user">
+          <Key>
+            <PropertyRef Name="Users_ID" />
+          </Key>
+          <Property Name="Users_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="First_Name" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Last_Name" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Phone" Type="String" MaxLength="12" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Role" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="45" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="personal_question" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="photo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <Association Name="products_fk_Products_Category">
+          <End Role="category" Type="Self.category" Multiplicity="1" />
+          <End Role="products" Type="Self.product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="category">
+              <PropertyRef Name="Category_ID" />
+            </Principal>
+            <Dependent Role="products">
+              <PropertyRef Name="Category_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="orders_fk_Orders_Invoice">
+          <End Role="invoice" Type="Self.invoice" Multiplicity="1" />
+          <End Role="orders" Type="Self.order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="invoice">
+              <PropertyRef Name="Invoice_ID" />
+            </Principal>
+            <Dependent Role="orders">
+              <PropertyRef Name="Invoice_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="orders_fk_Orders_Products">
+          <End Role="products" Type="Self.product" Multiplicity="1" />
+          <End Role="orders" Type="Self.order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="products">
+              <PropertyRef Name="Product_ID" />
+            </Principal>
+            <Dependent Role="orders">
+              <PropertyRef Name="Product_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="eStoreDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="categories" EntityType="Self.category" />
+          <EntitySet Name="Cobones" EntityType="Self.Cobone" />
+          <EntitySet Name="invoices" EntityType="Self.invoice" />
+          <EntitySet Name="orders" EntityType="Self.order" />
+          <EntitySet Name="products" EntityType="Self.product" />
+          <EntitySet Name="users" EntityType="Self.user" />
+          <AssociationSet Name="products_fk_Products_Category" Association="Self.products_fk_Products_Category">
+            <End Role="category" EntitySet="categories" />
+            <End Role="products" EntitySet="products" />
+          </AssociationSet>
+          <AssociationSet Name="orders_fk_Orders_Invoice" Association="Self.orders_fk_Orders_Invoice">
+            <End Role="invoice" EntitySet="invoices" />
+            <End Role="orders" EntitySet="orders" />
+          </AssociationSet>
+          <AssociationSet Name="orders_fk_Orders_Products" Association="Self.orders_fk_Orders_Products">
+            <End Role="products" EntitySet="products" />
+            <End Role="orders" EntitySet="orders" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="eStoreDBModelStoreContainer" CdmEntityContainer="eStoreDBEntities">
+          <EntitySetMapping Name="categories">
+            <EntityTypeMapping TypeName="eStoreDBModel.category">
+              <MappingFragment StoreEntitySet="category">
+                <ScalarProperty Name="Category_ID" ColumnName="Category_ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Cobones">
+            <EntityTypeMapping TypeName="eStoreDBModel.Cobone">
+              <MappingFragment StoreEntitySet="Cobones">
+                <ScalarProperty Name="Cobone_ID" ColumnName="Cobone_ID" />
+                <ScalarProperty Name="cobone_number" ColumnName="cobone_number" />
+                <ScalarProperty Name="active_date" ColumnName="active_date" />
+                <ScalarProperty Name="end_date" ColumnName="end_date" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="Products" ColumnName="Products" />
+                <ScalarProperty Name="percent" ColumnName="percent" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="invoices">
+            <EntityTypeMapping TypeName="eStoreDBModel.invoice">
+              <MappingFragment StoreEntitySet="invoice">
+                <ScalarProperty Name="Invoice_ID" ColumnName="Invoice_ID" />
+                <ScalarProperty Name="DateTime" ColumnName="DateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="orders">
+            <EntityTypeMapping TypeName="eStoreDBModel.order">
+              <MappingFragment StoreEntitySet="orders">
+                <ScalarProperty Name="Sold_Quantity" ColumnName="Sold_Quantity" />
+                <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+                <ScalarProperty Name="Invoice_ID" ColumnName="Invoice_ID" />
+                <ScalarProperty Name="PK" ColumnName="PK" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="products">
+            <EntityTypeMapping TypeName="eStoreDBModel.product">
+              <MappingFragment StoreEntitySet="products">
+                <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="Image" ColumnName="Image" />
+                <ScalarProperty Name="Category_ID" ColumnName="Category_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="users">
+            <EntityTypeMapping TypeName="eStoreDBModel.user">
+              <MappingFragment StoreEntitySet="users">
+                <ScalarProperty Name="Users_ID" ColumnName="Users_ID" />
+                <ScalarProperty Name="First_Name" ColumnName="First_Name" />
+                <ScalarProperty Name="Last_Name" ColumnName="Last_Name" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Role" ColumnName="Role" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="personal_question" ColumnName="personal_question" />
+                <ScalarProperty Name="photo" ColumnName="photo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

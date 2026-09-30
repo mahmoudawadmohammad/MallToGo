@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="eStoreDBModelStoreContainer" CdmEntityContainer="eStoreDBEntities">
+    <EntitySetMapping Name="categories">
+      <EntityTypeMapping TypeName="eStoreDBModel.category">
+        <MappingFragment StoreEntitySet="category">
+          <ScalarProperty Name="Category_ID" ColumnName="Category_ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cobones">
+      <EntityTypeMapping TypeName="eStoreDBModel.Cobone">
+        <MappingFragment StoreEntitySet="Cobones">
+          <ScalarProperty Name="Cobone_ID" ColumnName="Cobone_ID" />
+          <ScalarProperty Name="cobone_number" ColumnName="cobone_number" />
+          <ScalarProperty Name="active_date" ColumnName="active_date" />
+          <ScalarProperty Name="end_date" ColumnName="end_date" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="Products" ColumnName="Products" />
+          <ScalarProperty Name="percent" ColumnName="percent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="invoices">
+      <EntityTypeMapping TypeName="eStoreDBModel.invoice">
+        <MappingFragment StoreEntitySet="invoice">
+          <ScalarProperty Name="Invoice_ID" ColumnName="Invoice_ID" />
+          <ScalarProperty Name="DateTime" ColumnName="DateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="orders">
+      <EntityTypeMapping TypeName="eStoreDBModel.order">
+        <MappingFragment StoreEntitySet="orders">
+          <ScalarProperty Name="Sold_Quantity" ColumnName="Sold_Quantity" />
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+          <ScalarProperty Name="Invoice_ID" ColumnName="Invoice_ID" />
+          <ScalarProperty Name="PK" ColumnName="PK" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="products">
+      <EntityTypeMapping TypeName="eStoreDBModel.product">
+        <MappingFragment StoreEntitySet="products">
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Category_ID" ColumnName="Category_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="eStoreDBModel.user">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="Users_ID" ColumnName="Users_ID" />
+          <ScalarProperty Name="First_Name" ColumnName="First_Name" />
+          <ScalarProperty Name="Last_Name" ColumnName="Last_Name" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="personal_question" ColumnName="personal_question" />
+          <ScalarProperty Name="photo" ColumnName="photo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

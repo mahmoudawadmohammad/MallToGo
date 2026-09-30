@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\syaf1\\OneDrive\\\u0633\u0637\u062D \u0627\u0644\u0645\u0643\u062A\u0628\\My Work\\\u0645\u0624\u064A\u062F\u0648\u0641\\SlamehProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{72A3FCD9-B039-4A0D-9370-DB99B6EB5F41}|SlamehProject\\SlamehProject.csproj|C:\\Users\\syaf1\\OneDrive\\\u0633\u0637\u062D \u0627\u0644\u0645\u0643\u062A\u0628\\My Work\\\u0645\u0624\u064A\u062F\u0648\u0641\\SlamehProject\\slamehproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72A3FCD9-B039-4A0D-9370-DB99B6EB5F41}|SlamehProject\\SlamehProject.csproj|solutionrelative:slamehproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72A3FCD9-B039-4A0D-9370-DB99B6EB5F41}|SlamehProject\\SlamehProject.csproj|c:\\users\\syaf1\\onedrive\\\u0633\u0637\u062D \u0627\u0644\u0645\u0643\u062A\u0628\\my work\\\u0645\u0624\u064A\u062F\u0648\u0641\\slamehproject\\slamehproject\\editprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72A3FCD9-B039-4A0D-9370-DB99B6EB5F41}|SlamehProject\\SlamehProject.csproj|solutionrelative:slamehproject\\editprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72A3FCD9-B039-4A0D-9370-DB99B6EB5F41}|SlamehProject\\SlamehProject.csproj|C:\\Users\\syaf1\\OneDrive\\\u0633\u0637\u062D \u0627\u0644\u0645\u0643\u062A\u0628\\My Work\\\u0645\u0624\u064A\u062F\u0648\u0641\\SlamehProject\\slamehproject\\editprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{72A3FCD9-B039-4A0D-9370-DB99B6EB5F41}|SlamehProject\\SlamehProject.csproj|solutionrelative:slamehproject\\editprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72A3FCD9-B039-4A0D-9370-DB99B6EB5F41}|SlamehProject\\SlamehProject.csproj|C:\\Users\\syaf1\\OneDrive\\\u0633\u0637\u062D \u0627\u0644\u0645\u0643\u062A\u0628\\My Work\\\u0645\u0624\u064A\u062F\u0648\u0641\\SlamehProject\\slamehproject\\methods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72A3FCD9-B039-4A0D-9370-DB99B6EB5F41}|SlamehProject\\SlamehProject.csproj|solutionrelative:slamehproject\\methods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EditProfile.cs",
+              "DocumentMoniker": "C:\\Users\\syaf1\\OneDrive\\\u0633\u0637\u062D \u0627\u0644\u0645\u0643\u062A\u0628\\My Work\\\u0645\u0624\u064A\u062F\u0648\u0641\\SlamehProject\\SlamehProject\\EditProfile.cs",
+              "RelativeDocumentMoniker": "SlamehProject\\EditProfile.cs",
+              "ToolTip": "C:\\Users\\syaf1\\OneDrive\\\u0633\u0637\u062D \u0627\u0644\u0645\u0643\u062A\u0628\\My Work\\\u0645\u0624\u064A\u062F\u0648\u0641\\SlamehProject\\SlamehProject\\EditProfile.cs",
+              "RelativeToolTip": "SlamehProject\\EditProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-27T05:55:40.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EditProfile.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\syaf1\\OneDrive\\\u0633\u0637\u062D \u0627\u0644\u0645\u0643\u062A\u0628\\My Work\\\u0645\u0624\u064A\u062F\u0648\u0641\\SlamehProject\\SlamehProject\\EditProfile.cs",
+              "RelativeDocumentMoniker": "SlamehProject\\EditProfile.cs",
+              "ToolTip": "C:\\Users\\syaf1\\OneDrive\\\u0633\u0637\u062D \u0627\u0644\u0645\u0643\u062A\u0628\\My Work\\\u0645\u0624\u064A\u062F\u0648\u0641\\SlamehProject\\SlamehProject\\EditProfile.cs [Design]",
+              "RelativeToolTip": "SlamehProject\\EditProfile.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T21:31:52.171Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\syaf1\\OneDrive\\\u0633\u0637\u062D \u0627\u0644\u0645\u0643\u062A\u0628\\My Work\\\u0645\u0624\u064A\u062F\u0648\u0641\\SlamehProject\\SlamehProject\\Program.cs",
+              "RelativeDocumentMoniker": "SlamehProject\\Program.cs",
+              "ToolTip": "C:\\Users\\syaf1\\OneDrive\\\u0633\u0637\u062D \u0627\u0644\u0645\u0643\u062A\u0628\\My Work\\\u0645\u0624\u064A\u062F\u0648\u0641\\SlamehProject\\SlamehProject\\Program.cs*",
+              "RelativeToolTip": "SlamehProject\\Program.cs*",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAcwBIAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T21:19:56.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Methods.cs",
+              "DocumentMoniker": "C:\\Users\\syaf1\\OneDrive\\\u0633\u0637\u062D \u0627\u0644\u0645\u0643\u062A\u0628\\My Work\\\u0645\u0624\u064A\u062F\u0648\u0641\\SlamehProject\\SlamehProject\\Methods.cs",
+              "RelativeDocumentMoniker": "SlamehProject\\Methods.cs",
+              "ToolTip": "C:\\Users\\syaf1\\OneDrive\\\u0633\u0637\u062D \u0627\u0644\u0645\u0643\u062A\u0628\\My Work\\\u0645\u0624\u064A\u062F\u0648\u0641\\SlamehProject\\SlamehProject\\Methods.cs",
+              "RelativeToolTip": "SlamehProject\\Methods.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAA5wDUAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2022-06-04T21:25:48.776Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

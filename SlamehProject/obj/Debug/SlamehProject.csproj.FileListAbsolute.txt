@@ -1,0 +1,89 @@
+D:\Collage\SlamehProject\SlamehProject\bin\Debug\SlamehProject.exe.config
+D:\Collage\SlamehProject\SlamehProject\bin\Debug\SlamehProject.exe
+D:\Collage\SlamehProject\SlamehProject\bin\Debug\SlamehProject.pdb
+D:\Collage\SlamehProject\SlamehProject\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.dll
+D:\Collage\SlamehProject\SlamehProject\obj\Debug\SlamehProject.Properties.Resources.resources
+D:\Collage\SlamehProject\SlamehProject\obj\Debug\SlamehProject.csproj.GenerateResource.cache
+D:\Collage\SlamehProject\SlamehProject\obj\Debug\SlamehProject.exe.licenses
+D:\Collage\SlamehProject\SlamehProject\obj\Debug\SlamehProject.csproj.CoreCompileInputs.cache
+D:\Collage\SlamehProject\SlamehProject\obj\Debug\SlamehProject.csproj.CopyComplete
+D:\Collage\SlamehProject\SlamehProject\obj\Debug\SlamehProject.exe
+D:\Collage\SlamehProject\SlamehProject\obj\Debug\SlamehProject.pdb
+D:\Collage\SlamehProject\SlamehProject\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+D:\Collage\SlamehProject\SlamehProject\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+D:\Collage\SlamehProject\SlamehProject\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.dll
+D:\Collage\SlamehProject\SlamehProject\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
+D:\Collage\SlamehProject\SlamehProject\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.dll
+D:\Collage\SlamehProject\SlamehProject\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
+D:\Collage\SlamehProject\SlamehProject\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.dll
+D:\Collage\SlamehProject\SlamehProject\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.dll
+D:\Collage\SlamehProject\SlamehProject\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.dll
+D:\Collage\SlamehProject\SlamehProject\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.dll
+D:\Collage\SlamehProject\SlamehProject\obj\Debug\SlamehProject.AdminMainPage.resources
+D:\Collage\SlamehProject\SlamehProject\bin\Debug\Bunifu.UI.WinForms.BunifuToggleSwitch.dll
+D:\Collage\SlamehProject\SlamehProject\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
+D:\Collage\SlamehProject\SlamehProject\obj\Debug\SlamehProject.EditAccountPage.resources
+D:\Collage\SlamehProject\SlamehProject\bin\Debug\Bunifu.UI.WinForms.BunifuPages.dll
+D:\Collage\SlamehProject\SlamehProject\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.dll
+D:\Collage\SlamehProject\SlamehProject\bin\Debug\Bunifu.UI.WinForms.BunifuGroupBox.dll
+D:\Collage\SlamehProject\SlamehProject\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.dll
+D:\Collage\SlamehProject\SlamehProject\bin\Debug\Bunifu.UI.WinForms.BunifuShapes.dll
+D:\Collage\SlamehProject\SlamehProject\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.dll
+D:\Collage\SlamehProject\SlamehProject\obj\Debug\SlamehProject.SellPoint.resources
+D:\Collage\SlamehProject\SlamehProject\obj\Debug\SlamehProject.UserControl1.resources
+D:\Collage\SlamehProject\SlamehProject\obj\Debug\SlamehProject.UserControl2.resources
+D:\Collage\SlamehProject\SlamehProject\obj\Debug\SlamehProject.Add_Category.resources
+D:\Collage\SlamehProject\SlamehProject\obj\Debug\SlamehProject.Product_Control.resources
+D:\Collage\SlamehProject\SlamehProject\obj\Debug\SlamehProject.Product_Form.resources
+D:\Collage\SlamehProject\SlamehProject\obj\Debug\SlamehProject.Product_Manager_Form.resources
+D:\Collage\SlamehProject\SlamehProject\obj\Debug\SlamehProject._Users.resources
+D:\Collage\SlamehProject\SlamehProject\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.dll
+D:\Collage\SlamehProject\SlamehProject\obj\Debug\SlamehProject.Categories_Page.resources
+D:\Collage\SlamehProject\SlamehProject\obj\Debug\SlamehProject.Login.resources
+D:\Collage\SlamehProject\SlamehProject\obj\Debug\SlamehProject.EditProfile.resources
+D:\Collage\SlamehProject\SlamehProject\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.dll
+D:\Collage\SlamehProject\SlamehProject\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.dll
+D:\Collage\SlamehProject\SlamehProject\obj\Debug\SlamehProject.Add_Cobone.resources
+D:\Collage\SlamehProject\SlamehProject\obj\Debug\SlamehProject.items.resources
+D:\Collage\SlamehProject\SlamehProject\obj\Debug\SlamehProject.Cobon_cotrole.resources
+D:\Collage\SlamehProject\SlamehProject\obj\Debug\SlamehProject.ManageCobones.resources
+D:\Collage\SlamehProject\SlamehProject\obj\Debug\SlamehProject.csproj.AssemblyReference.cache
+D:\Collage\SlamehProject\SlamehProject\bin\Debug\EntityFramework.dll
+D:\Collage\SlamehProject\SlamehProject\bin\Debug\EntityFramework.SqlServer.dll
+D:\Collage\SlamehProject\SlamehProject\bin\Debug\EntityFramework.xml
+D:\Collage\SlamehProject\SlamehProject\bin\Debug\EntityFramework.SqlServer.xml
+D:\Collage\SlamehProject\SlamehProject\obj\Debug\SlamehProject.Test.resources
+C:\Users\syaf1\OneDrive\سطح المكتب\My Work\مؤيدوف\SlamehProject\SlamehProject\bin\Debug\SlamehProject.exe.config
+C:\Users\syaf1\OneDrive\سطح المكتب\My Work\مؤيدوف\SlamehProject\SlamehProject\bin\Debug\SlamehProject.exe
+C:\Users\syaf1\OneDrive\سطح المكتب\My Work\مؤيدوف\SlamehProject\SlamehProject\bin\Debug\SlamehProject.pdb
+C:\Users\syaf1\OneDrive\سطح المكتب\My Work\مؤيدوف\SlamehProject\SlamehProject\bin\Debug\EntityFramework.dll
+C:\Users\syaf1\OneDrive\سطح المكتب\My Work\مؤيدوف\SlamehProject\SlamehProject\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\syaf1\OneDrive\سطح المكتب\My Work\مؤيدوف\SlamehProject\SlamehProject\bin\Debug\EntityFramework.xml
+C:\Users\syaf1\OneDrive\سطح المكتب\My Work\مؤيدوف\SlamehProject\SlamehProject\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\syaf1\OneDrive\سطح المكتب\My Work\مؤيدوف\SlamehProject\SlamehProject\obj\Debug\SlamehProject.csproj.AssemblyReference.cache
+C:\Users\syaf1\OneDrive\سطح المكتب\My Work\مؤيدوف\SlamehProject\SlamehProject\obj\Debug\SlamehProject.Add_Cobone.resources
+C:\Users\syaf1\OneDrive\سطح المكتب\My Work\مؤيدوف\SlamehProject\SlamehProject\obj\Debug\SlamehProject.Add_Category.resources
+C:\Users\syaf1\OneDrive\سطح المكتب\My Work\مؤيدوف\SlamehProject\SlamehProject\obj\Debug\SlamehProject.AdminMainPage.resources
+C:\Users\syaf1\OneDrive\سطح المكتب\My Work\مؤيدوف\SlamehProject\SlamehProject\obj\Debug\SlamehProject.Categories_Page.resources
+C:\Users\syaf1\OneDrive\سطح المكتب\My Work\مؤيدوف\SlamehProject\SlamehProject\obj\Debug\SlamehProject.Cobon_cotrole.resources
+C:\Users\syaf1\OneDrive\سطح المكتب\My Work\مؤيدوف\SlamehProject\SlamehProject\obj\Debug\SlamehProject.EditAccountPage.resources
+C:\Users\syaf1\OneDrive\سطح المكتب\My Work\مؤيدوف\SlamehProject\SlamehProject\obj\Debug\SlamehProject.EditProfile.resources
+C:\Users\syaf1\OneDrive\سطح المكتب\My Work\مؤيدوف\SlamehProject\SlamehProject\obj\Debug\SlamehProject.items.resources
+C:\Users\syaf1\OneDrive\سطح المكتب\My Work\مؤيدوف\SlamehProject\SlamehProject\obj\Debug\SlamehProject.Login.resources
+C:\Users\syaf1\OneDrive\سطح المكتب\My Work\مؤيدوف\SlamehProject\SlamehProject\obj\Debug\SlamehProject.ManageCobones.resources
+C:\Users\syaf1\OneDrive\سطح المكتب\My Work\مؤيدوف\SlamehProject\SlamehProject\obj\Debug\SlamehProject.Product_Control.resources
+C:\Users\syaf1\OneDrive\سطح المكتب\My Work\مؤيدوف\SlamehProject\SlamehProject\obj\Debug\SlamehProject.Product_Form.resources
+C:\Users\syaf1\OneDrive\سطح المكتب\My Work\مؤيدوف\SlamehProject\SlamehProject\obj\Debug\SlamehProject.Product_Manager_Form.resources
+C:\Users\syaf1\OneDrive\سطح المكتب\My Work\مؤيدوف\SlamehProject\SlamehProject\obj\Debug\SlamehProject.Properties.Resources.resources
+C:\Users\syaf1\OneDrive\سطح المكتب\My Work\مؤيدوف\SlamehProject\SlamehProject\obj\Debug\SlamehProject.SellPoint.resources
+C:\Users\syaf1\OneDrive\سطح المكتب\My Work\مؤيدوف\SlamehProject\SlamehProject\obj\Debug\SlamehProject.Test.resources
+C:\Users\syaf1\OneDrive\سطح المكتب\My Work\مؤيدوف\SlamehProject\SlamehProject\obj\Debug\SlamehProject.UserControl1.resources
+C:\Users\syaf1\OneDrive\سطح المكتب\My Work\مؤيدوف\SlamehProject\SlamehProject\obj\Debug\SlamehProject.UserControl2.resources
+C:\Users\syaf1\OneDrive\سطح المكتب\My Work\مؤيدوف\SlamehProject\SlamehProject\obj\Debug\SlamehProject._Users.resources
+C:\Users\syaf1\OneDrive\سطح المكتب\My Work\مؤيدوف\SlamehProject\SlamehProject\obj\Debug\SlamehProject.csproj.GenerateResource.cache
+C:\Users\syaf1\OneDrive\سطح المكتب\My Work\مؤيدوف\SlamehProject\SlamehProject\obj\Debug\SlamehProject.exe.licenses
+C:\Users\syaf1\OneDrive\سطح المكتب\My Work\مؤيدوف\SlamehProject\SlamehProject\obj\Debug\SlamehProject.csproj.CoreCompileInputs.cache
+C:\Users\syaf1\OneDrive\سطح المكتب\My Work\مؤيدوف\SlamehProject\SlamehProject\obj\Debug\SlamehProject.exe
+C:\Users\syaf1\OneDrive\سطح المكتب\My Work\مؤيدوف\SlamehProject\SlamehProject\obj\Debug\SlamehProject.pdb
+C:\Users\syaf1\OneDrive\سطح المكتب\My Work\مؤيدوف\SlamehProject\SlamehProject\obj\Debug\SlamehProject.exe.config
+C:\Users\syaf1\OneDrive\سطح المكتب\My Work\مؤيدوف\SlamehProject\SlamehProject\obj\Debug\SlamehPr.31892C15.Up2Date
